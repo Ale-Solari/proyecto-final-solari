@@ -100,21 +100,18 @@ select:hover {
 
 /* MAIN - LOCALES SER UTILIZA GRID */
 .main-locales {
-  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
-  padding: 20px; }
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%); }
 
-.main-locales .container {
+.main-locales section {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  justify-items: stretch;
-  margin: 15px;
-  padding: 25px; }
+  margin: 10px; }
 
 .main-locales img {
-  width: 500px;
+  max-width: 600px;
   height: 250px;
   margin: auto;
-  padding: 25px; }
+  padding: 15px; }
 
 .info__locales {
   text-align: center;
@@ -122,14 +119,12 @@ select:hover {
   text-transform: uppercase;
   font-weight: bold;
   font-family: 'Roboto', sans-serif;
-  letter-spacing: 1px;
   color: #27509b;
-  max-width: 500px;
+  max-width: 400px;
   margin: auto; }
 
 @media (max-width: 862px) {
-  .main-locales .container {
-    display: grid;
+  .main-locales section {
     grid-template-columns: 1fr; }
   .main-locales img {
     width: 300px;
