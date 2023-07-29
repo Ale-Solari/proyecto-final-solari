@@ -113,7 +113,8 @@ select:hover {
 .main-locales img {
   width: 500px;
   height: 250px;
-  margin: auto; }
+  margin: auto;
+  padding: 25px; }
 
 .info__locales {
   text-align: center;

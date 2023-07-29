@@ -17,6 +17,7 @@
     width: 500px;
     height: 250px;
     margin: auto;
+    padding: 25px;
 }
 
 .info__locales {
@@ -38,7 +39,6 @@
     .main-locales .container {
         display: grid;
         grid-template-columns: 1fr;
-
     }
 
     .main-locales img {
