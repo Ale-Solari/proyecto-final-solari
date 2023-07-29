@@ -103,13 +103,16 @@ select:hover {
   background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
   padding: 20px; }
 
-.main-locales div {
-  display: inline-block;
-  margin: 10px;
-  padding: 10px; }
+.main-locales .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: stretch;
+  margin: 15px;
+  padding: 25px; }
 
 .main-locales img {
-  width: 450px;
+  width: 500px;
+  height: 250px;
   margin: auto; }
 
 .info__locales {
@@ -120,14 +123,22 @@ select:hover {
   font-family: 'Roboto', sans-serif;
   letter-spacing: 1px;
   color: #27509b;
-  margin: 5px; }
+  max-width: 500px;
+  margin: auto; }
 
 @media (max-width: 862px) {
+  .main-locales .container {
+    display: grid;
+    grid-template-columns: 1fr; }
   .main-locales img {
-    width: 250px; }
+    width: 300px;
+    height: 150px;
+    margin: 5px;
+    padding: 10px; }
   .info__locales {
     font-size: 10px;
-    font-weight: normal; } }
+    font-weight: normal;
+    max-width: 250px; } }
 
 /* MAIN - MULTIMEDIA - CARD BOOSTRAP*/
 .main-multimedia {
