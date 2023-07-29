@@ -1,0 +1,36 @@
+/* FOOTER CON FLEX-BOX SE UTILIZA ANIDACION*/
+
+.footer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: stretch;
+    align-items: stretch;
+    margin: 10px;
+    background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+
+    .items-footer {
+        list-style-type: none;
+    }
+
+    .botones-footer {
+        color: $azul-ppal;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: bold;
+        margin: 10px;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .texto-footer {
+        text-align: center;
+        margin: 10px;
+        border: 2px outset gray;
+        border-radius: 5px;
+        font-family: 'Open Sans', sans-serif;
+        color: gray;
+        font-weight: bold;
+    }
+
+}

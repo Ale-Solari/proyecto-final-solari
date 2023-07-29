@@ -1,0 +1,43 @@
+/* MAIN - LOCALES BOOSTRAP PARA CREAR CONTENEDORES */
+
+.main-locales {
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    padding: 20px;
+}
+
+.main-locales div {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+}
+
+.main-locales img {
+    width: 450px;
+    margin: auto;
+    
+}
+
+.info__locales {
+    text-align: center;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    color: rgb(39, 80, 155);
+    margin: 5px;
+}
+
+// Se efectua el media querys para acomodar las imagenes en mobile.
+
+@media (max-width:862px) {
+    
+    .main-locales img {
+        width: 250px;        
+    }
+
+    .info__locales {
+        font-size: 10px;
+        font-weight: normal;
+    }
+}

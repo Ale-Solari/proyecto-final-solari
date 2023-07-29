@@ -1,0 +1,52 @@
+/* MAIN CON BEM Y MEDIA QUERYS PARA LOGRAR EL RESPONSIVE EN MOBILE*/
+
+.main-index {
+    background-image: url(../recursos/Fotos/resize5.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 800px;
+    padding: 20px;
+    margin: 35px;
+      
+}
+
+.main__encabezado {
+    text-transform: uppercase;
+    font-family: 'Kanit', sans-serif;
+    font-size: 50px;
+    color: $azul-ppal;
+    text-align: center;
+    padding: 25px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.main__texto {
+    grid-area: texto1;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 5px;
+    max-width: 900px;
+    margin: auto;
+}
+
+// Se aplica media querys en H1 y texto de la pagina principal
+
+@media (max-width:862px) {
+    .main__encabezado {
+        font-size: 30px;
+        padding: 30px;
+    }
+
+    .main__texto {
+        font-size: 10px;
+        color: white;
+        font-weight: normal;
+        text-transform: uppercase;
+    }    
+
+}

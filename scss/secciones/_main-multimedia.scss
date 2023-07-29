@@ -1,0 +1,35 @@
+/* MAIN - MULTIMEDIA - CARD BOOSTRAP*/
+
+.main-multimedia{
+    background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+}
+
+.row-cols-1{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;    
+}
+
+.main-multimedia .card-body{
+    background-image: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
+}
+
+
+.main-multimedia h5{
+    text-align: center;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    color: rgb(39, 80, 155);
+}
+
+.main-multimedia p{
+    text-align: justify;
+    font-size: 15px;
+    font-weight: lighter;
+    color: black;
+    letter-spacing: 1px;
+}

@@ -1,0 +1,60 @@
+/* HEADER CON BOOTSTRAP*/
+
+.header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+
+.header img {
+    width: 200px;
+}
+
+.bg-body-tertiary {
+    background-color: white !important;
+}
+
+
+.header ul {
+    padding: 30px;
+    background-image: linear-gradient(to top, #dfe9f3 0%, white 100%) !important;
+    font-family: 'Kanit', sans-serif !important;
+}
+
+.header a {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: $azul-ppal;
+}
+
+// Se aplica media querys para adaptar el logo a dispositivos mas chicos
+
+@media (max-width:862px) {
+    .header img {
+        width: 120px;
+    }
+
+    .navbar-toggler {
+        color:  $celeste !important;        
+    }
+
+    .navbar-toggler-icon {
+    width: 0.8em !important;
+    height: 0.8em !important;
+    }
+
+    .header ul {
+        text-transform: uppercase;
+        font-size: 8px !important;
+        background-image: none !important;
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: space-between !important;
+    }
+   
+   
+
+}
