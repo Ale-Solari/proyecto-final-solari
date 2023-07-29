@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Ramabhadra&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif; }
+
+/* PSEUDOCLASES */
+input:hover {
+  font-weight: bold;
+  color: #27509b; }
+
+select:hover {
+  font-weight: bold;
+  color: #27509b; }
+
+/* HEADER CON BOOTSTRAP*/
+.header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px; }
+
+.header img {
+  width: 200px; }
+
+.bg-body-tertiary {
+  background-color: white !important; }
+
+.header ul {
+  padding: 30px;
+  background-image: linear-gradient(to top, #dfe9f3 0%, white 100%) !important;
+  font-family: 'Kanit', sans-serif !important; }
+
+.header a {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #27509b; }
+
+@media (max-width: 862px) {
+  .header img {
+    width: 120px; }
+  .navbar-toggler {
+    color: #69ade2 !important; }
+  .navbar-toggler-icon {
+    width: 0.8em !important;
+    height: 0.8em !important; }
+  .header ul {
+    text-transform: uppercase;
+    font-size: 8px !important;
+    background-image: none !important;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important; } }
+
+/* MAIN CON BEM Y MEDIA QUERYS PARA LOGRAR EL RESPONSIVE EN MOBILE*/
+.main-index {
+  background-image: url(../recursos/Fotos/resize5.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 800px;
+  padding: 20px;
+  margin: 35px; }
+
+.main__encabezado {
+  text-transform: uppercase;
+  font-family: 'Kanit', sans-serif;
+  font-size: 50px;
+  color: #27509b;
+  text-align: center;
+  padding: 25px;
+  max-width: 900px;
+  margin: auto; }
+
+.main__texto {
+  grid-area: texto1;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  color: black;
+  font-weight: bold;
+  font-size: 15px;
+  margin: 5px;
+  max-width: 900px;
+  margin: auto; }
+
+@media (max-width: 862px) {
+  .main__encabezado {
+    font-size: 30px;
+    padding: 30px; }
+  .main__texto {
+    font-size: 10px;
+    color: white;
+    font-weight: normal;
+    text-transform: uppercase; } }
+
+/* MAIN - LOCALES BOOSTRAP PARA CREAR CONTENEDORES */
+.main-locales {
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  padding: 20px; }
+
+.main-locales div {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px; }
+
+.main-locales img {
+  width: 450px;
+  margin: auto; }
+
+.info__locales {
+  text-align: center;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1px;
+  color: #27509b;
+  margin: 5px; }
+
+@media (max-width: 862px) {
+  .main-locales img {
+    width: 250px; }
+  .info__locales {
+    font-size: 10px;
+    font-weight: normal; } }
+
+/* MAIN - MULTIMEDIA - CARD BOOSTRAP*/
+.main-multimedia {
+  background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%); }
+
+.row-cols-1 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center; }
+
+.main-multimedia .card-body {
+  background-image: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%); }
+
+.main-multimedia h5 {
+  text-align: center;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1px;
+  color: #27509b; }
+
+.main-multimedia p {
+  text-align: justify;
+  font-size: 15px;
+  font-weight: lighter;
+  color: black;
+  letter-spacing: 1px; }
+
+/* MAIN - SERVICIOS */
+.main-servicios {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  background-image: linear-gradient(to top, #dfe9f3 0%, white 100%); }
+
+.texto-serv {
+  text-align: justify;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1px;
+  line-height: 30px;
+  color: #69ade2;
+  font-weight: bold;
+  margin: 25px;
+  height: auto;
+  border: 2px double #27509b; }
+
+.img-serv {
+  width: 500px;
+  height: 300px;
+  margin: 20px;
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); }
+
+@media (max-width: 1084px) {
+  .img-serv {
+    max-width: 350px;
+    max-height: 250px;
+    padding: 20px; }
+  .texto-serv {
+    font-size: 13px;
+    padding: 25px;
+    border: 1px double #27509b; } }
+
+@media (max-width: 862px) {
+  .img-serv {
+    max-width: 330px;
+    margin: 30px;
+    padding: 20px; }
+  .texto-serv {
+    text-align: justify;
+    font-size: 10px;
+    border: 1px ridge #69ade2; } }
+
+/* MAIN - CONTACTO - BOOSTRAP Y ANIDACION*/
+.main-contacto {
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  margin: 5px; }
+  .main-contacto .g-2 {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    align-items: center;
+    margin: auto;
+    text-transform: uppercase;
+    max-width: 400px;
+    border: 2px ridge #69ade2; }
+  .main-contacto .boton-enviar {
+    margin: 15px;
+    padding: 5px;
+    color: #69ade2;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bolder; }
+
+/* FOOTER CON FLEX-BOX SE UTILIZA ANIDACION*/
+.footer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: stretch;
+  align-items: stretch;
+  margin: 10px;
+  background-image: linear-gradient(to top, #dfe9f3 0%, white 100%); }
+  .footer .items-footer {
+    list-style-type: none; }
+  .footer .botones-footer {
+    color: #27509b;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 10px;
+    font-family: 'Open Sans', sans-serif; }
+  .footer .texto-footer {
+    text-align: center;
+    margin: 10px;
+    border: 2px outset gray;
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+    color: gray;
+    font-weight: bold; }
