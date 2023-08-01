@@ -206,7 +206,7 @@ select:hover {
 @media (max-width: 862px) {
   .img-serv {
     max-width: 330px;
-    margin: 30px;
+    margin: auto;
     padding: 20px; }
   .texto-serv {
     text-align: justify;
